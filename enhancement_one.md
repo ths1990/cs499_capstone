@@ -68,7 +68,6 @@ I rewrote the code from C++ into Java and created separate classes for a more mo
 				cout << "You have selected an invalid option. Please select and option 1-3." << endl;
 				break;
 		}
-
 	}
 }														      
 ```
@@ -131,11 +130,6 @@ I rewrote the code from C++ into Java and created separate classes for a more mo
 </td>
 </tr>
 </table>
-
-```cpp
-
- ```
-
 
 Through these enhancements, I have met the course objectives that I planned to meet in Module One which I have listed below:  
 
