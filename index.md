@@ -86,3 +86,7 @@ I really enjoyed making these initial enhancements, and it went a lot smoother t
 
 <details close>
   <summary>
+   <h2>Enhancement Three: Databases</h2>
+  </summary>
+  Add narrative
+</details>
