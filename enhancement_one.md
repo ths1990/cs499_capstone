@@ -13,12 +13,12 @@ I rewrote the code from C++ into Java and created separate classes for a more mo
 ```cpp
 {
   int main() {
-int answer = 0;
-int loginAttempts = 0; //Keeps track of number of attempts.
-int choice = 0; //Default value for choice menu.
-int MAX_ATTEMPTS = 3; //Constant for maximum login attempts
-cout << "A Ty Simpson Product.\n" << "Hello! Welcome to Our Investment Company\n";
-while (answer != 1){
+  int answer = 0;
+  int loginAttempts = 0; //Keeps track of number of attempts.
+  int choice = 0; //Default value for choice menu.
+  int MAX_ATTEMPTS = 3; //Constant for maximum login attempts
+  cout << "A Ty Simpson Product.\n" << "Hello! Welcome to Our Investment Company\n";
+  while (answer != 1){
   if (loginAttempts == MAX_ATTEMPTS){ //Once loginAttempts equals MAX_ATTEMPTs, exit the program
 	cout << "You have exceeded the maximum number of login attempts. Goodbye." << endl;
  		return 0;
@@ -58,9 +58,10 @@ while (answer != 1){
 			default:
 				cout << "You have selected an invalid option. Please select and option 1-3." << endl;
 				break;
+		}
+	}
 }
-}
-}
+														      
 ```
 </pre>
 </td>
