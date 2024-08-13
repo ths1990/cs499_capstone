@@ -65,7 +65,9 @@ while (answer != 1){
 				break;
 		}
 	}
- ```</details>
+ ```
+```
+</details>
 
 Through these enhancements, I have met the course objectives that I planned to meet in Module One which I have listed below:  
 
