@@ -3,7 +3,7 @@ Repository and ePortfolio for Capstone Project
 
 ## Code Review
 
-[![Code Review Thumbnail](https://i9.ytimg.com/vi_webp/xiE6kq0efdw/mq2.webp?sqp=CLD6kLUG-oaymwEmCMACELQB8quKqQMa8AEB-AH4CYAC0AWKAgwIABABGDogYChlMA8=&rs=AOn4CLDTxuDcdX1Ay_zm7Mz-yFlriSu_SA)](https://youtu.be/xiE6kq0efdw)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xiE6kq0efdw?si=bP_jDyBY5pIpI4KI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Enhancement One: Software Engineering and Design
 
