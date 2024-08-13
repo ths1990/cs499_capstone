@@ -16,8 +16,8 @@ Professional self-assessment here
 
 <details close>
   <summary> Original C++ Main Function</summary>
-  ```c++
-    
+  
+    ```c++
     int main() {
     int answer = 0;
     int loginAttempts = 0; //Keeps track of number of attempts.
@@ -65,8 +65,8 @@ Professional self-assessment here
 				cout << "You have selected an invalid option. Please select and option 1-3." << endl;
 				break;
 		}
-	}
- ```
+	}```
+ 
 </details>
 
 Through these enhancements, I have met the course objectives that I planned to meet in Module One which I have listed below:  
