@@ -13,7 +13,8 @@ Professional self-assessment here
     <h2>Enhancement One: Software Engineering and Design</h2>
   </summary>
       I rewrote the code from C++ into Java and created separate classes for a more modular design. Successfully transferring the code between these two languages showcased my ability to first understand the logic of how the code works as well as my understanding of the syntax between the two languages to achieve parity between the original artifact and the enhancement. Creating separate classes showcases my understanding and implementing best practices for Object Oriented Programming (OOP).
-
+<details close>
+	<summary> Original C++ Main Function</summary>
 ```cpp
 
 int main() {
@@ -64,8 +65,7 @@ while (answer != 1){
 				break;
 		}
 	}
- ```
-
+ ```</details>
 
 Through these enhancements, I have met the course objectives that I planned to meet in Module One which I have listed below:  
 
