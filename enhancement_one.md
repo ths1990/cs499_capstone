@@ -9,24 +9,122 @@ I rewrote the code from C++ into Java and created separate classes for a more mo
 </tr>
 <tr>
 <td>
-```cpp
 <pre>
 
+```cpp
 {
-  
+  int main() {
+    int answer = 0;
+	int loginAttempts = 0; //Keeps track of number of attempts.
+	int choice = 0; //Default value for choice menu.
+
+	int MAX_ATTEMPTS = 3; //Constant for maximum login attempts
+
+
+	cout << "A Ty Simpson Product.\n" << "Hello! Welcome to Our Investment Company\n";
+
+	while (answer != 1){
+		if (loginAttempts == MAX_ATTEMPTS){ //Once loginAttempts equals MAX_ATTEMPTs, exit the program
+			cout << "You have exceeded the maximum number of login attempts. Goodbye." << endl;
+			return 0;
+		}
+		answer = CheckUserPermissionAccess();
+		if(answer == 1){
+			break;
+		}
+		else {
+			cout << "Invalid Password. Please try again\n";
+			loginAttempts++; // At each login fail, increment loginAttempts by 1
+			cout << "Attempt " << loginAttempts << " / " << MAX_ATTEMPTS << "\n"; //Print message to alert user of number of attempts
+
+		}
+	}
+
+	while (choice != 3){
+		cout << "What would you like to do?\n";
+		cout << "DISPLAY the client list (enter 1)\n";
+		cout << "CHANGE a client's choice (enter 2)\n";
+		cout << "Exit the program. (enter 3)\n";
+
+		choice = ValidateNumericInput(); //Ensures user input is a numeric value.
+		cout << "You chose " << choice << "\n";
+
+		/*
+		 * Switch statement to limit what choices a user can make, tied to the menu options.
+		 * Ideal for this particular scenario - with a preset limit of user choices.
+		 */
+		switch(choice){
+			case 1:
+				DisplayInfo();
+				break;
+			case 2:
+				ChangeCustomerChoice();
+				break;
+			case 3:
+				cout << "Good-bye" << endl;
+				return 1;
+				break;
+			default:
+				cout << "You have selected an invalid option. Please select and option 1-3." << endl;
+				break;
+		}
+
+	}
 }														      
 ```
-```
+
 </pre>
 </td>
 <td>
 
 ```java
 {
-  "id": 5,
-  "username": "mary",
-  "email": "mary@example.com",
-  "order_id": "f7177da"
+    public static void main(String[] args) {
+
+        int MAX_ATTEMPTS = 3; // Maximum number of login attempts
+        int loginAttempts = 0; // Keeps track of login attempts
+        boolean authenticated = false;
+        int choice = 0;
+
+         System.out.println("Welcome to the Capstone Project!");
+
+         while(!authenticated){
+            //Prevent brute force attacks by limiting the number of login attempts
+            if(loginAttempts < MAX_ATTEMPTS){
+                if(CheckPermission()){
+                    authenticated = true;
+                } else{
+                    loginAttempts++;
+                    System.out.println("Invalid username or password. Please try again.");
+                    System.out.println("Attempts remaining: " + (MAX_ATTEMPTS - loginAttempts));
+                }
+            } else{
+                System.out.println("Too many failed login attempts. Please try again later.");
+            }
+         }
+
+         LoadClients();
+
+         while(choice !=3){
+            DisplayMenu();
+            choice = InputValidators.validateNumericInput();
+            switch(choice){
+                case 1:
+                    DisplayClients();
+                    break;
+                case 2:
+                    System.out.println("Enter the ID of the client you would like to change: ");
+                    int clientId = InputValidators.validateNumericInput();
+                    ChangeClientChoice(clientId);
+                    break;
+                case 3:
+                    System.out.println("Exiting the program...");
+                    break;
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+            }
+         }
+    }
 }
 ```
 
