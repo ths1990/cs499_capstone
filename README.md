@@ -17,7 +17,7 @@ Professional self-assessment here
 <details close>
   <summary> Original C++ Main Function</summary>
   
-    ```cpp
+    ```java
     int main() {
     int answer = 0;
     int loginAttempts = 0; //Keeps track of number of attempts.
@@ -66,7 +66,8 @@ Professional self-assessment here
 				break;
 		}
 	}
- ``` </details>
+ ```
+</details>
 
 Through these enhancements, I have met the course objectives that I planned to meet in Module One which I have listed below:  
 
