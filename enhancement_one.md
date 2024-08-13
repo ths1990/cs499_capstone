@@ -4,47 +4,25 @@ I rewrote the code from C++ into Java and created separate classes for a more mo
 
 <table>
 <tr>
-<th>Json 1</th>
-<th>Markdown</th>
+<th>C++</th>
+<th>Java</th>
 </tr>
 <tr>
 <td>
 <pre>
-{
-  "id": 1,
-  "username": "joe",
-  "email": "joe@example.com",
-  "order_id": "3544fc0"
-}
-</pre>
-</td>
-<td>
-
-```json
-{
-  "id": 5,
-  "username": "mary",
-  "email": "mary@example.com",
-  "order_id": "f7177da"
-}
-```
-
-</td>
-</tr>
-</table>
-
 ```cpp
-int main() {
+{
+  int main() {
 int answer = 0;
 int loginAttempts = 0; //Keeps track of number of attempts.
 int choice = 0; //Default value for choice menu.
 int MAX_ATTEMPTS = 3; //Constant for maximum login attempts
 cout << "A Ty Simpson Product.\n" << "Hello! Welcome to Our Investment Company\n";
 while (answer != 1){
-	if (loginAttempts == MAX_ATTEMPTS){ //Once loginAttempts equals MAX_ATTEMPTs, exit the program
-		cout << "You have exceeded the maximum number of login attempts. Goodbye." << endl;
-			return 0;
-		}
+  if (loginAttempts == MAX_ATTEMPTS){ //Once loginAttempts equals MAX_ATTEMPTs, exit the program
+	cout << "You have exceeded the maximum number of login attempts. Goodbye." << endl;
+ 		return 0;
+	}
 		answer = CheckUserPermissionAccess();
 		if(answer == 1){
 			break;
@@ -80,8 +58,29 @@ while (answer != 1){
 			default:
 				cout << "You have selected an invalid option. Please select and option 1-3." << endl;
 				break;
-		}
-	}
+}
+}
+}
+```
+</pre>
+</td>
+<td>
+
+```java
+{
+  "id": 5,
+  "username": "mary",
+  "email": "mary@example.com",
+  "order_id": "f7177da"
+}
+```
+
+</td>
+</tr>
+</table>
+
+```cpp
+
  ```
 
 
