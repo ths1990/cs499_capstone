@@ -14,17 +14,17 @@ Professional self-assessment here
   </summary>
       I rewrote the code from C++ into Java and created separate classes for a more modular design. Successfully transferring the code between these two languages showcased my ability to first understand the logic of how the code works as well as my understanding of the syntax between the two languages to achieve parity between the original artifact and the enhancement. Creating separate classes showcases my understanding and implementing best practices for Object Oriented Programming (OOP).
 
-  
-    ```java
-    int main() {
-    int answer = 0;
-    int loginAttempts = 0; //Keeps track of number of attempts.
-    int choice = 0; //Default value for choice menu.
-    int MAX_ATTEMPTS = 3; //Constant for maximum login attempts
-    cout << "A Ty Simpson Product.\n" << "Hello! Welcome to Our Investment Company\n";
-	while (answer != 1){
-		if (loginAttempts == MAX_ATTEMPTS){ //Once loginAttempts equals MAX_ATTEMPTs, exit the program
-			cout << "You have exceeded the maximum number of login attempts. Goodbye." << endl;
+```
+java
+int main() {
+int answer = 0;
+int loginAttempts = 0; //Keeps track of number of attempts.
+int choice = 0; //Default value for choice menu.
+int MAX_ATTEMPTS = 3; //Constant for maximum login attempts
+cout << "A Ty Simpson Product.\n" << "Hello! Welcome to Our Investment Company\n";
+while (answer != 1){
+	if (loginAttempts == MAX_ATTEMPTS){ //Once loginAttempts equals MAX_ATTEMPTs, exit the program
+		cout << "You have exceeded the maximum number of login attempts. Goodbye." << endl;
 			return 0;
 		}
 		answer = CheckUserPermissionAccess();
