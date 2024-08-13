@@ -5,14 +5,28 @@ Professional self-assessment here
 <summary>
   <h2>Code Review</h2>
 </summary>
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xiE6kq0efdw?si=bP_jDyBY5pIpI4KI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 </details>
 
-## Enhancement One: Software Engineering and Design
+<details close>
+  <summary>
+    <h2>Enhancement One: Software Engineering and Design
+  </summary>
+      Add Narrative
+</details>
 
-## Enhancement Two: Algorithms and Data Structure
+<details close>
+  <summary>
+    <h2>Enhancement Two: Algorithms and Data Structure</h2>
+  </summary>
+  Add Narrative
+</details>
 
-## Enhancement Three: Databases
+
+<details close>
+  <summary>
+    <h2>Enhancement Three: Databases</h2>
+  </summary>
+  Add Narrative
+</details>
 
