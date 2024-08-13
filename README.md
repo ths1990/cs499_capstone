@@ -17,7 +17,7 @@ Professional self-assessment here
 <details close>
   <summary> Original C++ Main Function</summary>
   
-    ```c++
+    ```cpp
     int main() {
     int answer = 0;
     int loginAttempts = 0; //Keeps track of number of attempts.
