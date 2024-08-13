@@ -10,7 +10,7 @@ Professional self-assessment here
 
 <details close>
   <summary>
-    <h2>Enhancement One: Software Engineering and Design
+    <h2>Enhancement One: Software Engineering and Design</h2>
   </summary>
       Add Narrative
 </details>
