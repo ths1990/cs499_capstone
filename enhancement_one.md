@@ -6,54 +6,25 @@ I rewrote the code from C++ into Java and created separate classes for a more mo
 
 ### Main():
 
+| Source                                | Code                                                                                                |
+| ------------------------------------- | --------------------------------------------------------------------------------------------------- |
+| `Original`                            | [client-original](/software_engineering_and_design/Project2_C++_CS410.cpp){:target="_blank"}        |
+| `Enhanced`                            | [client-enhanced](/software_engineering_and_design/capstone/src/main/java/com/capstone/Main.java)   |
+
 In the Main Java class, I ported most of the functionality from the original artificat straight to Java. I converted the original list of variables in the C++ code into an ArrayList structure - this way the client ID, name, and service code are all associated with a singular object and not tied to individual variables. 
 
+### Classes:
 
+| Class                        | Code                          |
+| ---------------------------- | ----------------------------- |
+| `Client()`                   | [client-class](#client-class) |
+|`InputValidtors()`            | [input-valid](#input-valid)   |
 
-| Original                            | Enhanced                            |
-| ----------------------------------- | ----------------------------------- |
-| [client-original](#client-original) | [client-enhanced](#client-enhanced) |
-
-### Client Class:
-
+#### Client():
 I created a Class file for clients. This encapsulates the data stored within the Client class, preventing unauthorized access to the class 
 while also making the code more readable, flexible and reusable. 
 
-```java
-public class Clients {
-private int clientId;
-private String name;
-private int serviceCode;
-
-public Clients(int clientId,String name, int serviceCode) {
-   this.clientId = clientId;
-   this.name = name;
-   this.serviceCode = serviceCode;
-}
-
-public int getClientId() {
-   return clientId;
-}
-
-public String getName() {
-   return name;
-}
-
-public void setName(String name) {
-   this.name = name;
-}
-
-public int getServiceCode() {
-   return serviceCode;
-}
-
-public void setServiceCode(int serviceCode) {
-   this.serviceCode = serviceCode;
-    }
-}
-```
-
-### Input Validation Class:
+#### Input Validation Class:
 
 In the original code, all of the methods were stored in the main cpp file. However, in the same spirit of making the Client it's own separate class file, I did the same for the various InputValidation methods from the original code. 
 
@@ -61,6 +32,7 @@ In the original code, all of the methods were stored in the main cpp file. Howev
 
 Since I used the same artifact for all three enhancements in this project, I added additional enhancments in this area that are featured in [software_engineering_and_design](/software_engineering_and_design/capstone/src/main/java/com/capstone/Main.java) I added addtional methods to Create and Deactivate clients - adding a boolean field to the Client class to indicate whether a client is active or not. I moved all methods around doing anything with the Client into its own separate class file called ClientManager. 
 
+## Objectives Met:
 
 Through these enhancements, I have met the course objectives that I planned to meet in Module One which I have listed below:  
 
@@ -109,6 +81,95 @@ public static void LoadClients(){
    clients.add(new Clients(5, "Carol Spears", 2));
  }
 
+```
+
+</details>
+
+<details id="client-class" close>
+<summary >client-class</summary>
+
+```java
+public class Clients {
+private int clientId;
+private String name;
+private int serviceCode;
+
+public Clients(int clientId,String name, int serviceCode) {
+   this.clientId = clientId;
+   this.name = name;
+   this.serviceCode = serviceCode;
+}
+
+public int getClientId() {
+   return clientId;
+}
+
+public String getName() {
+   return name;
+}
+
+public void setName(String name) {
+   this.name = name;
+}
+
+public int getServiceCode() {
+   return serviceCode;
+}
+
+public void setServiceCode(int serviceCode) {
+   this.serviceCode = serviceCode;
+    }
+}
+```
+
+</details>
+
+<details id="input-valid" close>
+<summary >input-valid</summary>
+
+```java
+public class InputValidators {
+
+static Scanner scanner = new Scanner(System.in);
+
+public static String validateUsername() {
+   int MIN_CHARS = 4;
+   int MAX_CHARS = 20;
+
+String username = scanner.nextLine();
+   while (username.length() < MIN_CHARS || username.length() > MAX_CHARS) {
+      System.out.println("Username must be between " + MIN_CHARS + " and " + MAX_CHARS + " characters long.");
+      username = scanner.nextLine();
+}
+   return username;
+}
+
+public static String validatePassword() {
+   int MIN_CHARS = 8;
+   int MAX_CHARS = 20;
+
+   String password = scanner.nextLine();
+      while (password.length() < MIN_CHARS || password.length() > MAX_CHARS) {
+         System.out.println("Password must be between " + MIN_CHARS + " and " + MAX_CHARS + " characters long.");
+         password = scanner.nextLine();
+}
+   return password;
+}
+
+public static int validateNumericInput() {
+   int input = 0;
+      while (true) {
+         try {
+            input = Integer.parseInt(scanner.nextLine());
+            break;
+            }
+          catch (NumberFormatException e) {
+            System.out.println("Invalid input. Please enter a number.");
+            }
+}
+   return input;
+   }
+}
 ```
 
 </details>
