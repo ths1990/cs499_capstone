@@ -44,5 +44,7 @@ Through these enhancements, I have met the course objectives that I planned to m
 
   
 I really enjoyed making these initial enhancements, and it went a lot smoother than I anticipated. I had to brush up on Java again, since many of my past courses used C++. One of the main challenges I faced was understanding how input worked in Java versus C++ using the Scanner class.\
+\
 [Enhancement Two](enhancement_two.md)\
+\
 [Home](index.md)
