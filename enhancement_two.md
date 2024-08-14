@@ -12,11 +12,11 @@ client, this code is better designed.
 ## Enhancement Breakdown:
 
 ### Main():
-| Source                                | Code                                                                                                                                  |
-| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| `Original`                            | [Original Artifact](/software_engineering_and_design/Project2_C++_CS410.cpp){:target="_blank"}                                        |
-| `Enhancement One`                     | [Software Engineering and Design](/software_engineering_and_design/capstone/src/main/java/com/capstone/Main.java){:target="_blank"}   |
-| `Enhancement Two`                     | [Algorithms and Data Structures](/algorithms_and_data_structures/capstone/src/main/java/com/capstone/Main.java){:target="_blank"}     |
+| Source            | Code                                                                                                                                |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `Original`        | [Original Artifact](/software_engineering_and_design/Project2_C++_CS410.cpp){:target="_blank"}                                      |
+| `Enhancement One` | [Software Engineering and Design](/software_engineering_and_design/capstone/src/main/java/com/capstone/Main.java){:target="_blank"} |
+| `Enhancement Two` | [Algorithms and Data Structures](/algorithms_and_data_structures/capstone/src/main/java/com/capstone/Main.java){:target="_blank"}   |
 
 All of the enhancements made for this category were made in the Main class. I took what I wrote for Enhancement One and made a few key changes. First I replaced the Clients ArrayList with a Map. The key-value structure allows for an efficient search algorithm for finding and changing a client's service code. I had to re-write the LoadClients(), DisplayClients(), and ChangeClientChoice() methods to be compatible with the Map strucutre. Additionaly, I wrote a method CreateClient() to add to the Client Map.
 
