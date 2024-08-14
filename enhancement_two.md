@@ -22,7 +22,7 @@ client, this code is better designed.
 All of the enhancements made for this category were made in the Main class. I took what I wrote for Enhancement One and made a few key changes. First I replaced the Clients ArrayList with a Map. The key-value structure allows for an efficient search algorithm for finding and changing a client's service code. I had to re-write the LoadClients(), DisplayClients(), and ChangeClientChoice() methods to be compatible with the Map strucutre. Additionaly, I wrote a method CreateClient() to add to the Client Map.
 
 ### Classes:
-No new class files were created for this enhancement.
+No new class files were created or changed for this enhancement.
 
 ## Objectives Met:
 Through these enhancements, I have met the following course objectives:
