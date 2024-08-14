@@ -5,19 +5,21 @@
 
 ### Main():  
 
-| Source     | Code                                                                                                                                |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| Original   | [Original Artifact](/software_engineering_and_design/Project2_C++_CS410.cpp){:target="_blank"}                                      |
-| Enhanced 1 | [Software Engineering and Design](/software_engineering_and_design/capstone/src/main/java/com/capstone/Main.java){:target="_blank"} |
-| Enhanced 2 | [Algorithms and Data Structures](/algorithms_and_data_structures/capstone/src/main/java/com/capstone/Main.java){:target="_blank"}   |
-| Enhanced 3 | [Databases](/databases/capstone/src/main/java/com/capstone/Main.java){:target="_blank"}                                             |
+| Source      | Code                                                                                                                                |
+| ----------  | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `Original`  | [Original Artifact](/software_engineering_and_design/Project2_C++_CS410.cpp){:target="_blank"}                                      |
+| `Enhanced 1`| [Software Engineering and Design](/software_engineering_and_design/capstone/src/main/java/com/capstone/Main.java){:target="_blank"} |
+| `Enhanced 2`| [Algorithms and Data Structures](/algorithms_and_data_structures/capstone/src/main/java/com/capstone/Main.java){:target="_blank"}   |
+| `Enhanced 3`| [Databases](/databases/capstone/src/main/java/com/capstone/Main.java){:target="_blank"}                                             |
 
 ### Classes:  
 
-| Class                        | Code                                                                                                   |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------ |
-| `Clients()`                  | [client-class](/databases/capstone/src/main/java/com/capstone/Clients.java){:target="_blank"}          |
-|`InputValidtors()`            | [input-valid](/databases/capstone/src/main/java/com/capstone/InputValidators.java){:target="_blank"}   |
+| Class               | Code                                                                                                     |
+| ------------------- | -------------------------------------------------------------------------------------------------------- |
+| `Client()`          | [client-class](/databases/capstone/src/main/java/com/capstone/Client.java){:target="_blank"}             |
+| `InputValidtors()`  | [input-valid](/databases/capstone/src/main/java/com/capstone/InputValidators.java){:target="_blank"}     |
+| `DbConnection()`    | [db-connect](/databases/capstone/src/main/java/com/capstone/DbConnection.java){:target="_blank"}         |
+| `ClientManager()`   | [client-manage](/databases/capstone/src/main/java/com/capstone/ClientManager.java){:target="_blank"}     |
 
 ## Objectives Met:
 Through these enhancements, I have met the following course objectives:
