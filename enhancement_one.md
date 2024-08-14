@@ -21,11 +21,11 @@ In the Main Java class, I ported most of the functionality from the original art
 | `Clients()`                  | [client-class](/software_engineering_and_design/capstone/src/main/java/com/capstone/Clients.java){:target="_blank"}          |
 |`InputValidtors()`            | [input-valid](/software_engineering_and_design/capstone/src/main/java/com/capstone/InputValidators.java){:target="_blank"}   |
 
-#### Client():
+#### Clients():
 I created a Class file for clients. This encapsulates the data stored within the Client class, preventing unauthorized access to the class 
 while also making the code more readable, flexible and reusable. 
 
-#### Input Validation Class:
+#### InputValidators():
 
 In the original code, all of the methods were stored in the main cpp file. However, in the same spirit of making the Client it's own separate class file, I did the same for the various InputValidation methods from the original code. 
 
@@ -35,7 +35,7 @@ Since I used the same artifact for all three enhancements in this project, I add
 
 ## Objectives Met:
 
-Through these enhancements, I have met the course objectives that I planned to meet in Module One which I have listed below:  
+Through these enhancements, I have met the the following course objectives:  
 
   
 - Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.
