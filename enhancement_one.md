@@ -16,7 +16,7 @@ In the Main Java class, I ported most of the functionality from the original art
 <tr>
 <td>
 
-```cpp
+```
 
 string name1 = "Bob Jones";
 string name2 = "Sarah Davis";
@@ -36,7 +36,7 @@ int num5 = 2;
 </td>
 <td>
 
-```java
+```
 public static void LoadClients(){
    clients.add(new Clients(1, "Bob Jones", 1));
    clients.add(new Clients(2, "Sarah Davis", 2));
