@@ -33,6 +33,7 @@ No changes have been made to this class.
 
 ## Database:
 
+![MongoDB Clients Collection Screenshot](mongodb_screeshot.png)
 
 ## Objectives Met:
 Through these enhancements, I have met the following course objectives:
