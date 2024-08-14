@@ -12,6 +12,7 @@ client, this code is better designed.
 ## Enhancement Breakdown:
 
 ### Main():
+
 | Source     | Code                                                                                                                                |
 | ---------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | Original   | [Original Artifact](/software_engineering_and_design/Project2_C++_CS410.cpp){:target="_blank"}                                      |
