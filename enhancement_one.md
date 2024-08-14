@@ -8,80 +8,11 @@ I rewrote the code from C++ into Java and created separate classes for a more mo
 
 In the Main Java class, I ported most of the functionality from the original artificat straight to Java. I converted the original list of variables in the C++ code into an ArrayList structure - this way the client ID, name, and service code are all associated with a singular object and not tied to individual variables. 
 
-## Title
 
-| Name    | Code                      |
-| ------- | ------------------------- |
-| `Hello` | [code-hello](#code-hello) |
 
-## Ref
-
-### Code
-
-<details id="code-hello" close>
-<summary >code-hello</summary>
-
-```cpp
-string name1 = "Bob Jones";
-string name2 = "Sarah Davis";
-string name3 = "Amy Friendly";
-string name4 = "Johny Smith";
-string name5 = "Carol Spears";
-
-//Nums - for Service Codes
-int num1 = 1;
-int num2= 2;
-int num3 = 1;
-int num4 = 1;
-int num5 = 2;
-}
-```
-
-</details>
-
-<table>
-<tr>
-<th>Original Code</th>
-<th>Enhanced</th>
-</tr>
-<tr>
-<td>
-
-```
-
-string name1 = "Bob Jones";
-string name2 = "Sarah Davis";
-string name3 = "Amy Friendly";
-string name4 = "Johny Smith";
-string name5 = "Carol Spears";
-
-//Nums - for Service Codes
-int num1 = 1;
-int num2= 2;
-int num3 = 1;
-int num4 = 1;
-int num5 = 2;
-
-```
-
-</td>
-<td>
-
-```
-public static void LoadClients(){
-   clients.add(new Clients(1, "Bob Jones", 1));
-   clients.add(new Clients(2, "Sarah Davis", 2));
-   clients.add(new Clients(3, "Amy Friendly", 1));
-   clients.add(new Clients(4, "Johny Smith", 1));
-   clients.add(new Clients(5, "Carol Spears", 2));
- }
-
-```
-
-</td>
-</tr>
-</table>
-
+| Original                            | Enhanced                            |
+| ----------------------------------- | ----------------------------------- |
+| [client-original](#client-original) | [client-enhanced](#client-enhanced) |
 
 ### Client Class:
 
@@ -136,5 +67,48 @@ Through these enhancements, I have met the course objectives that I planned to m
   
 - Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.
 - Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources.
+
+
   
 I really enjoyed making these initial enhancements, and it went a lot smoother than I anticipated. I had to brush up on Java again, since many of my past courses used C++. One of the main challenges I faced was understanding how input worked in Java versus C++ using the Scanner class.
+
+## Ref
+
+### Code
+
+<details id="client-original" close>
+<summary >client-original</summary>
+
+```cpp
+string name1 = "Bob Jones";
+string name2 = "Sarah Davis";
+string name3 = "Amy Friendly";
+string name4 = "Johny Smith";
+string name5 = "Carol Spears";
+
+//Nums - for Service Codes
+int num1 = 1;
+int num2= 2;
+int num3 = 1;
+int num4 = 1;
+int num5 = 2;
+}
+```
+
+</details>
+
+<details id="client-enhanced" close>
+<summary >client-enhanced</summary>
+
+```java
+public static void LoadClients(){
+   clients.add(new Clients(1, "Bob Jones", 1));
+   clients.add(new Clients(2, "Sarah Davis", 2));
+   clients.add(new Clients(3, "Amy Friendly", 1));
+   clients.add(new Clients(4, "Johny Smith", 1));
+   clients.add(new Clients(5, "Carol Spears", 2));
+ }
+
+```
+
+</details>
