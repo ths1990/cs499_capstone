@@ -7,10 +7,10 @@ I rewrote the code from C++ into Java and created separate classes for a more mo
 
 ### Main():
 
-| Source                                | Code                                                                                                                   |
-| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| `Original`                            | [client-original](/software_engineering_and_design/Project2_C++_CS410.cpp){:target="_blank"}                           |
-| `Enhanced`                            | [client-enhanced](/software_engineering_and_design/capstone/src/main/java/com/capstone/Main.java){:target="_blank"}    |
+| Source     | Code                                                                                                                                   |
+| ---------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `Original` | [Original Artifact](/software_engineering_and_design/Project2_C++_CS410.cpp){:target="_blank"}                                         |
+| `Enhanced` | [Software Engineering and Design](/software_engineering_and_design/capstone/src/main/java/com/capstone/Main.java){:target="_blank"}    |
 
 In the Main Java class, I ported most of the functionality from the original artificat straight to Java. I converted the original list of variables in the C++ code into an ArrayList structure - this way the client ID, name, and service code are all associated with a singular object and not tied to individual variables. 
 
