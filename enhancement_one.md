@@ -8,6 +8,37 @@ I rewrote the code from C++ into Java and created separate classes for a more mo
 
 In the Main Java class, I ported most of the functionality from the original artificat straight to Java. I converted the original list of variables in the C++ code into an ArrayList structure - this way the client ID, name, and service code are all associated with a singular object and not tied to individual variables. 
 
+## Title
+
+| Name    | Code                      |
+| ------- | ------------------------- |
+| `Hello` | [code-hello](#code-hello) |
+
+## Ref
+
+### Code
+
+<details id="code-hello" close>
+<summary >code-hello</summary>
+
+```cpp
+string name1 = "Bob Jones";
+string name2 = "Sarah Davis";
+string name3 = "Amy Friendly";
+string name4 = "Johny Smith";
+string name5 = "Carol Spears";
+
+//Nums - for Service Codes
+int num1 = 1;
+int num2= 2;
+int num3 = 1;
+int num4 = 1;
+int num5 = 2;
+}
+```
+
+</details>
+
 <table>
 <tr>
 <th>Original Code</th>
