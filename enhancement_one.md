@@ -37,14 +37,13 @@ int num5 = 2;
 <td>
 
 ```java
-
-   public static void LoadClients(){
-        clients.add(new Clients(1, "Bob Jones", 1));
-        clients.add(new Clients(2, "Sarah Davis", 2));
-        clients.add(new Clients(3, "Amy Friendly", 1));
-        clients.add(new Clients(4, "Johny Smith", 1));
-        clients.add(new Clients(5, "Carol Spears", 2));
-    }
+public static void LoadClients(){
+   clients.add(new Clients(1, "Bob Jones", 1));
+   clients.add(new Clients(2, "Sarah Davis", 2));
+   clients.add(new Clients(3, "Amy Friendly", 1));
+   clients.add(new Clients(4, "Johny Smith", 1));
+   clients.add(new Clients(5, "Carol Spears", 2));
+ }
 
 ```
 
@@ -60,34 +59,34 @@ while also making the code more readable, flexible and reusable.
 
 ```java
 public class Clients {
-    private int clientId;
-    private String name;
-    private int serviceCode;
+private int clientId;
+private String name;
+private int serviceCode;
 
-    public Clients(int clientId,String name, int serviceCode) {
-        this.clientId = clientId;
-        this.name = name;
-        this.serviceCode = serviceCode;
-    }
+public Clients(int clientId,String name, int serviceCode) {
+   this.clientId = clientId;
+   this.name = name;
+   this.serviceCode = serviceCode;
+}
 
-    public int getClientId() {
-        return clientId;
-    }
+public int getClientId() {
+   return clientId;
+}
 
-    public String getName() {
-        return name;
-    }
+public String getName() {
+   return name;
+}
 
-    public void setName(String name) {
-        this.name = name;
-    }
+public void setName(String name) {
+   this.name = name;
+}
 
-    public int getServiceCode() {
-        return serviceCode;
-    }
+public int getServiceCode() {
+   return serviceCode;
+}
 
-    public void setServiceCode(int serviceCode) {
-        this.serviceCode = serviceCode;
+public void setServiceCode(int serviceCode) {
+   this.serviceCode = serviceCode;
     }
 }
 ```
